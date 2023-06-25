@@ -17,8 +17,9 @@ Feature: Product Search
     When he searches for '<item>'
     Then he sees displayed results does not contain title '<title>'
     Examples:
-      | item  | title                            |
-      | pasta | Apple Bandit Cider classic apple |
+      | item   | title                            |
+      | pasta  | Apple Bandit Cider classic apple |
+      | orange | Pepsi Cola fles                  |
 
   Scenario: Search for not existed products
     When he searches for 'book'
